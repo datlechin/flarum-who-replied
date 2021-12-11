@@ -1,0 +1,35 @@
+{
+    "name": "datlechin/flarum-who-replied",
+    "description": "Show the users who replied to a post",
+    "keywords": [
+        "flarum"
+    ],
+    "type": "flarum-extension",
+    "license": "MIT",
+    "require": {
+        "flarum/core": "^1.0.0"
+    },
+    "authors": [
+        {
+            "name": "Ngo Quoc Dat",
+            "email": "datlechin@gmail.com",
+            "role": "Developer"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Datlechin\\WhoReplied\\": "src/"
+        }
+    },
+    "extra": {
+        "flarum-extension": {
+            "title": "Who Replied",
+            "category": "feature",
+            "icon": {
+                "name": "fas fa-reply-all",
+                "backgroundColor": "#D3241C",
+                "color": "#fff"
+            }
+        }
+    }
+}
