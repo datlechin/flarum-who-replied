@@ -16,11 +16,10 @@ export default class PostRepliesModal extends Modal {
     return (
       <div className="Modal-body">
         <ul className="PostRepliesModal-list">
-          {this.attrs.users.map(user => (
+          {this.attrs.users.map((user) => (
             <li>
               <Link href={app.route.user(user)}>
-                {avatar(user)} {' '}
-                {username(user)}
+                {avatar(user)} {username(user)}
               </Link>
             </li>
           ))}
